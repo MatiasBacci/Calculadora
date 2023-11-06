@@ -5,30 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="calculator">
-        <div class="display">0</div>
-        <div class="buttons">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
-            <button>C</button>
-            <button>0</button>
-            <button>CE</button>
-            <button>*</button>
-            <button>=</button>
-        </div>    
+
+        <div class="numeros">
+            <label for="numberA">Numero A: <input id="numberA" type="number"></label>
+            <label for="numberB">Numero B: <input id="numberB" type="number"></label>
+        </div>
+
+        <button onclick="calcular('+')">+</button> 
+        <button onclick="calcular('-')">-</button> 
+        <button onclick="calcular('/')">/</button> 
+        <button onclick="calcular('*')">*</button> 
+
+        <div class="display" id="display">0</div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

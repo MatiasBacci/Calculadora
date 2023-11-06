@@ -5,9 +5,13 @@
     margin: 0 auto;
     border: 2px solid #ccc;
     border-radius: 8px;
-    background-image: url(./269b4ad9eff88b32749e5c44f0ab39ff.jpg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.numeros {
+    display: flex;
+}
+
 
 .display {
     height: 60px;
@@ -18,10 +22,6 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0 10px;
-}
-
-.buttons {
-    margin: 2px auto;
 }
 
 button {
@@ -35,9 +35,6 @@ button {
     cursor: pointer;
 }
 
-button:nth-child(17) {
-    width: 97%;
-}
 
 button:hover {
     background: #f0f0f0;
